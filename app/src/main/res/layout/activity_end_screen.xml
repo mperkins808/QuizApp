@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndScreenActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/congratsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="200dp"
+        android:text="PLACEHOLDER"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yourScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:text="YOUR SCORE"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congratsTextView" />
+
+    <TextView
+        android:id="@+id/scoreDisplayTextView"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:text="PLC"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourScoreTextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="20dp"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/startAgainButton"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:onClick="onNewQuizClick"
+            android:text="Take New Quiz"> </Button>
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:text="FINISH"
+            android:onClick="finishClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startAgainButton" />
+    </LinearLayout>
+
+</LinearLayout>
